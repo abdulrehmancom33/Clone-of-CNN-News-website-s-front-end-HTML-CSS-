@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        .contain{
+
+            width: 100%;
+            background-color: white;
+            height:750px;
+            margin-top: 20px;
+
+
+        }
+        .container1{
+
+            width: 100%;
+            background-color: white;
+            height:650px;
+
+
+
+        }
+        .container2{
+            width: 100%;
+            background-color: white;
+            height:700px;
+
+        }
+        .container3
+        {
+            width: 100%;
+            background-color: white;
+            height:1000px;
+
+        }
+
+
+
+.con{
+    width:100%;
+
+
+}
+        ul {
+
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            background-color: black;
+            width:100%;
+            height: 50px;
+
+
+        }
+        li{
+            float: left;
+        }
+        li,a{
+            text-decoration: none;
+            color:lightgrey;
+
+            display:block;
+            align:center;
+
+
+
+
+        }
+        li,a:hover{
+            color: white;
+        }
+        img {
+
+            width: 60px;
+            height: 60px;
+            margin-left: 100px;
+            position: absolute;
+        }
+        a{
+            margin: 15px -165px 100px 175px;
+            position: relative;
+
+
+        }
+
+
+
+        #a2{
+            margin-left: 120px;
+            cursor: pointer;
+        }
+        .footer{
+
+            width:100%;
+            background-color: black;
+
+            position: absolute;
+            height: 950px;
+            color: white;
+            text-align:center;
+        }
+
+
+       .a6{
+           margin-left:-80px;
+
+           height:150px;
+           float: left;
+           color: black;
+           background-color: white;
+
+
+
+       }
+       .a7{
+           margin-top: 20px;
+           margin-left:-7px;
+
+           height:150px;
+           float: left;
+           color: black;
+           background-color: white;
+
+       }
+
+        #aa1:hover{
+            color: darkred;
+        }
+        #aa2:hover{
+            color: darkred;
+        }
+        #aa3:hover{
+            color: darkred;
+        }
+        #aa11:hover{
+            color: darkred;
+        }
+
+        .col1{
+            margin-top: 100px;
+            margin-left: -210px;
+            float: left;
+            width: 33%;
+            height: 700px;
+            padding: 10px;
+
+
+
+        }
+        .a7{
+            width: 23%;
+            float: left;
+            height: 700px;
+
+        }
+       .a8 {
+            margin-top: 5px;
+            margin-left: -5px;
+            float: left;
+            width: 33%;
+            height: 700px;
+            padding: 10px;
+
+
+
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+<div class="con">
+
+
+    <ul>
+        <li id="a1"><img src="data:image/png;base64,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"></li>
+        <li><a href="youtube.com">World |</a></li>
+        <li><a href="https://classroom.google.com/c/MTc1MzM4MjY0NDJa/a/MTcyNTc5MTgxNzRa/details">U.S. politics |</a></li>
+        <li><a href="#">Money |</a></li>
+        <li><a href="#">Entertainment |</a></li>
+        <li><a href="#">Tech |</a></li>
+        <li><a href="#">Sport |</a></li>
+        <li><a href="#">Travel |</a></li>
+        <li><a href="#">Style |</a></li>
+        <li><a href="#">Health |</a></li>
+        <li><a href="#">video |</a></li>
+        <li><a href="#">VR |</a></li>
+
+
+            <li id="a2"><a href="#"> International edition +</a></li>
+
+
+    </ul>
+</div>
+
+<div class="contain">
+    <div class="a6">
+        <a  style="color: black" href="#"> <h1 id="aa1">Donald trump announced <br> proxy war in middle east</h1></a>
+    </div>
+          <div class="col1">
+              <a href="#"> <img style="width:390px; height: 280px; margin-left: -185px;margin-top: -20px;border-radius: 2px"src="https://cdn.cnn.com/cnnnext/dam/assets/181005104026-01-senate-floor-kavanaugh-cloture-1005-exlarge-tease.jpg"></a>
+              <br><br><br><br><br><br><br><br><br><a style="margin-left:-10px;color: black" href=""><h3 id="aa2" style="font-weight: bolder;font-size: 20px">syria is once again being attacked by amaerica<br> a toatl condemnable act by america</h3></a>
+              <hr width="400px" style="margin-top: -90px; margin-left: -10px">
+              <a style="margin-left:-10px;margin-top:-10px;color: black;" href="#"><h3 style="font-weight: lighter;font-size: 18px" id="aa3">syria is once again being attacked by amaerica<br> a toatl condemnable act by america</h3></a>
+              <hr width="400px" style="margin-top: -90px; margin-left: -10px">
+              <a style="margin-left:-10px;margin-top:-10px;color: black;" href="#"><h3 style="font-weight: lighter;font-size: 18px" id="aa3">syria is once again being attacked by amaerica<br> a toatl condemnable act by america</h3></a>
+              <hr width="400px" style="margin-top: -90px; margin-left: -10px">
+              <a style="margin-left:-10px;margin-top:-10px;color: black;" href="#"><h3 style="font-weight: lighter;font-size: 18px" id="aa3">syria is once again being attacked by amaerica<br> a toatl condemnable act by america</h3></a>
+          </div>
+
+           <div class="a7">
+               <div class="a14" style="background-color:#f2f2f2;height:35px;width: 280px;margin-left: -9px;"><a href="#"><h3 style="color: black;margin-left: -170px;">Top Stories</h3></a></div>
+               <a href="#"> <img style="width:280px; height: 230px; margin-left: -185px;margin-top: -15px;border-radius: 2px"src="https://cdn.cnn.com/cnnnext/dam/assets/181005133444-01-meng-hongwei-file-restricted-medium-tease.jpg"></a>
+               <br><br><br><br><br><br><br><a style="margin-left:-10px;color: black" href=""><h3 id="aa2" style="font-weight: bolder;font-size: 20px">syria being attacked by amarica<br>toatl condemnable act by america</h3></a>
+               <hr width="280px" style="margin-top: -90px; margin-left: -10px">
+               <a style="margin-left:-10px;margin-top:-10px;color: black;" href="#"><h3 style="font-weight: lighter;font-size: 18px" id="aa3">syria is once again being attacked <br>by amaerica<br> a toatl condemnable act by america</h3></a>
+               <hr width="280px" style="margin-top: -90px; margin-left: -10px">
+               <a style="margin-left:-10px;margin-top:-10px;color: black;" href="#"><h3 style="font-weight: lighter;font-size: 18px" id="aa3">syria is once again being attacked <br>by amaerica<br> a toatl condemnable act by america</h3></a>
+               <hr width="280px" style="margin-top: -90px; margin-left: -10px">
+               <a style="margin-left:-10px;margin-top:-10px;color: black;" href="#"><h3 style="font-weight: lighter;font-size: 18px" id="aa3">syria is once again being attacked<br> by amaerica<br> a toatl condemnable act by america</h3></a>
+               <hr width="280px" style="margin-top: -90px; margin-left: -10px">
+               <a style="margin-left:-10px;margin-top:-10px;color: black;" href="#"><h3 style="font-weight: lighter;font-size: 18px" id="aa3">syria is once again being attacked<br> by amaerica<br> </h3></a>
+           </div>
+
+    <div class="a8">
+        <div class="a14" style="background-color:#f2f2f2;height:35px;width: 280px;margin-left: -9px;margin-top: 25px"><a href="#"><h3 style="color: black;margin-left: -170px;">In Focus</h3></a></div>
+        <a href="#"> <img style="width:280px; height: 230px; margin-left: -185px;margin-top: -16px;border-radius: 2px"src="https://cdn.cnn.com/cnnnext/dam/assets/181004112525-06-william-frankland-100418-medium-tease.jpg"></a>
+        <a style="margin-left:-10px;color: black" href=""><h3 id="aa2" style="font-weight: bolder;font-size: 20px;margin-top: 245px">syria being attacked by amarica<br>toatl condemnable act by america</h3></a>
+        <hr width="280px" style="margin-top: -90px; margin-left: -10px">
+        <a style="margin-left:-10px;margin-top:-10px;color: black;" href="#"><h3 style="font-weight: lighter;font-size: 18px" id="aa3">syria is once again being attacked <br>by amaerica<br> a toatl condemnable act by america</h3></a>
+        <hr width="280px" style="margin-top: -90px; margin-left: -10px">
+        <a style="margin-left:-10px;margin-top:-10px;color: black;" href="#"><h3 style="font-weight: lighter;font-size: 18px" id="aa3">syria is once again being attacked <br>by amaerica<br> a toatl condemnable act by america</h3></a>
+        <hr width="280px" style="margin-top: -90px; margin-left: -10px">
+        <a style="margin-left:-10px;margin-top:-10px;color: black;" href="#"><h3 style="font-weight: lighter;font-size: 18px" id="aa3">syria is once again being attacked<br> by amaerica<br> a toatl condemnable act by america</h3></a>
+
+    </div>
+</div>
+<div class="container1">
+    <div class="a9" style="margin-top: -80px;margin-left: 80px">
+        <a href="#"> <img style="width:280px; height: 230px; margin-left: -470px;margin-top: -90px;border-radius: 2px"src="https://cdn.cnn.com/cnnnext/dam/assets/181003164951-tvincabin-exlarge-tease.jpg"></a>
+        <br><br><br><br><br><br><br><a style="margin-left:-10px;color: black" href=""><h3 id="aa2" style="font-weight: bolder;font-size: 20px">syria being attacked by amarica<br>toatl condemnable act by america</h3></a>
+        <hr width="280px" style="margin-top: -90px; margin-left: -10px">
+        <a style="margin-left:-10px;margin-top:-10px;color: black;" href="#"><h3 style="font-weight: lighter;font-size: 18px" id="aa3">syria is once again being attacked <br>by amaerica<br> a toatl condemnable act by america</h3></a>
+        <hr width="280px" style="margin-top: -90px; margin-left: -10px">
+        <a style="margin-left:-10px;margin-top:-10px;color: black;" href="#"><h3 style="font-weight: lighter;font-size: 18px" id="aa3">syria is once again being attacked <br>by amaerica<br> a toatl condemnable act by america</h3></a>
+        <hr width="280px" style="margin-top: -90px; margin-left: -10px">
+        <a style="margin-left:-10px;margin-top:-10px;color: black;" href="#"><h3 style="font-weight: lighter;font-size: 18px" id="aa3">syria is once again being attacked<br> by amaerica<br> a toatl condemnable act by america</h3></a>
+        <hr width="280px" style="margin-top: -90px; margin-left: -10px">
+        <a style="margin-left:-10px;margin-top:-10px;color: black;" href="#"><h3 style="font-weight: lighter;font-size: 18px" id="aa3">syria is once again being attacked<br> by amaerica<br> </h3></a>
+    </div>
+    <div class="a10" style="margin-top: -600px;margin-left: 680px;position: absolute">
+        <a href="#"> <img style="width:430px;position: relative; height: 230px; margin-left: -470px;margin-top: -90px;border-radius: 2px"src="https://cdn.cnn.com/cnnnext/dam/assets/150923160248-dpa-longchamp-pv-03-piste-hd-v2-exlarge-tease.jpg"></a>
+         <a style="margin-left:-300px;color: black" href=""><h3 id="aa2" style="font-weight:lighter;font-size: 30px;margin-top: -89px;position: relative">syria is being attacked by amaerica<br></h3></a>
+        <a href="#"> <img style="width:178px; height: 120px; margin-left: -470px;margin-top: -90px;border-radius: 2px"src="https://images.outbrainimg.com/transform/v3/eyJpdSI6IjQ4Y2IyNmY2MDM3ZGViZDZiMWQ0MTI1ZDdlNTdiYzhiZmQ3ZGMzYWZmMzg2MzUwNmFmNDU4OWQ1NjllMzYyMjgiLCJ3IjozNzAsImgiOjIyMCwiZCI6MS41LCJjcyI6MCwiZiI6MH0.webp"></a><p style="color: darkgray;font-weight: bold;font-size: 18px;position: relative;margin-left: -110px;margin-top: -90px">EXCLUSIVE</p>
+        <a style="margin-left:-110px;color: black;" href=""><h3 id="aa2" style="font-weight:lighter;font-size: 25px;margin-top: -20px;position: relative">syria is being attacked<br>by new clear <br></h3></a>
+        <a href="#"> <img style="width:178px; height: 120px; margin-left: -470px;margin-top: -50px;border-radius: 2px"src="https://images.outbrainimg.com/transform/v3/eyJpdSI6IjY3YTU5Y2ZlMDk3MmYzNjI5OTZjNWY2MjBlZGViZTc2OGY3MTFhMjBmNGY2ZjRmNzlmMjg0ODEwZTI3MGJjOWQiLCJ3IjozNzAsImgiOjIyMCwiZCI6MS41LCJjcyI6MCwiZiI6MH0.webp"></a>
+        <a style="margin-left:-110px;color: black;" href=""><h3 id="aa2" style="font-weight:lighter;font-size: 25px;margin-top: -30px;position: relative">syria is being attacked<br>by new clear <br></h3></a>
+    </div>
+<div class="a11" style="margin-left: 680px">
+    <a href="#"> <img style="width:330px; height: 230px; margin-left: -20px;margin-top: -675px;border-radius: 2px"src="https://images.outbrainimg.com/transform/v3/eyJpdSI6IjJjNjQyOTU0ODZiNjFlODdkMzYzNGEyYjU4MzllYjlkNmNiNjA4ZWQ2N2FiOTRjNzNhNGEzZmM2YmNiM2JkMzAiLCJ3IjozNzAsImgiOjIyMCwiZCI6MS41LCJjcyI6MCwiZiI6MH0.webp"></a><br><br><br><br><br>
+    <div></div> <h2 style="color: darkgray;font-weight: bold;font-size: 18px;position: relative;margin-left: 160px;margin-top: -500px;background-color: lightgray;height: 40px;width:330px;line-height: 30px;color: darkslategrey">spotlight</h2>
+    <a href="#"> <img style="width:100px; height: 100px; margin-left: -15px;margin-top: -15px;border-radius: 2px"src="https://cdn.cnn.com/cnnnext/dam/assets/181005104251-04-nadia-murad-file-2016-medium-tease.jpg"></a><br><br><br><br><br>
+    <a style="margin-left:270px;color: black;" href=""><h3 id="aa2" style="font-weight:lighter;font-size: 18px;margin-top: -200px;position: relative">syria is being attacked<br>by new clear <br></h3></a>
+    <a href="#"> <img style="width:100px; height: 100px; margin-left: -15px;margin-top: -42px;border-radius: 2px"src="https://cdn.cnn.com/cnnnext/dam/assets/181005144432-korda-sisters-living-golf-small-tease.jpg"></a><br><br><br><br><br>
+    <a style="margin-left:270px;color: black;" href=""><h3 id="aa2" style="font-weight:lighter;font-size: 18px;margin-top: -140px;position: relative">syria is being attacked<br>by new clear <br></h3></a>
+</div>
+</div>
+<div class="container2">
+    <div class="a12">
+ <p style="text-align: center;margin-top: -110px;margin-left: -1020px;font-size: 25px;font-weight:lighter">Featured Sections </p><hr style="width: 900px;margin-top: -40px;margin-left: 250px;height: 3px;background-color:lightgray;border-top: lightgray"><br><br>
+        <hr style="width: 900px;margin-top: -43px;margin-left: 250px;height: 3px;background-color:lightgray;border-top: lightgray">
+
+    </div>
+    <div class="a13">
+        <div class="a14" style="background-color:#f2f2f2;height:35px;width: 320px;margin-left: 65px;"><a href="#"><h3 style="color: black;margin-left: -170px;">CNN Business</h3></a></div>
+        <a href="#"> <img style="width:320px;border-top: 30px; height: 200px; margin-left: -110px;margin-top: -15px;border-radius: 2px"src="https://cdn.cnn.com/cnnnext/dam/assets/181005123748-tease-1-the-architectural-photography-awards-exlarge-tease.jpg"></a><br><br><br><br><br>
+        <a style="margin-left:60px;color: black" href=""><h3 id="aa2" style="font-weight: lighter;font-size: 22px">syria is once again being attacked by <br>amaerica. a condemnable act</h3></a>
+        <hr width="320px" style="margin-top: -90px; margin-left: 60px">
+        <a style="margin-left:60px;margin-top:-10px;color: black;" href="#"><h3 style="font-weight: lighter;font-size: 17px" id="aa3">syria is once again being attacked by amaerica<br> a toatl condemnable act by america</h3></a>
+        <hr width="320px" style="margin-top: -90px; margin-left: 60px">
+        <a style="margin-left:60px;margin-top:-10px;color: black;" href="#"><h3 style="font-weight: lighter;font-size: 17px" id="aa3">syria is once again being attacked by amaerica<br> a toatl condemnable act by america</h3></a>
+        <hr width="320px" style="margin-top: -90px; margin-left: 60px">
+        <a style="margin-left:60px;margin-top:-10px;color: black;" href="#"><h3 style="font-weight: lighter;font-size: 17px" id="aa3">syria is once again being attacked by amaerica<br> a toatl condemnable act by america</h3></a>
+    </div>
+    <div class="a15" style="margin-left: 340px">
+        <div class="a16" style="background-color:#f2f2f2;height:35px;width: 320px;margin-left: 65px;margin-top: -575px"><a href="#"><h3 style="color: black;margin-left: -170px;">Travel</h3></a></div>
+        <a href="#"> <img style="width:320px;border-top: 30px; height: 200px; margin-left: -110px;margin-top: -15px;border-radius: 2px"src="https://cdn.cnn.com/cnnnext/dam/assets/180823164426-03-rwanda-politics-video-exlarge-tease.jpg"></a><br><br><br><br><br>
+        <a style="margin-left:60px;color: black" href=""><h3 id="aa2" style="font-weight: lighter;font-size: 22px">syria is once again being attacked by <br>amaerica. a condemnable act</h3></a>
+        <hr width="320px" style="margin-top: -90px; margin-left: 60px">
+        <a style="margin-left:60px;margin-top:-10px;color: black;" href="#"><h3 style="font-weight: lighter;font-size: 17px" id="aa3">syria is once again being attacked by amaerica<br> a toatl condemnable act by america</h3></a>
+        <hr width="320px" style="margin-top: -90px; margin-left: 60px">
+        <a style="margin-left:60px;margin-top:-10px;color: black;" href="#"><h3 style="font-weight: lighter;font-size: 17px" id="aa3">syria is once again being attacked by amaerica<br> a toatl condemnable act by america</h3></a>
+        <hr width="320px" style="margin-top: -90px; margin-left: 60px">
+        <a style="margin-left:60px;margin-top:-10px;color: black;" href="#"><h3 style="font-weight: lighter;font-size: 17px" id="aa3">syria is once again being attacked by amaerica<br> a toatl condemnable act by america</h3></a>
+    </div>
+    <div class="a17" style="margin-top: -550px;margin-left: 690px">
+        <div class="a18" style="background-color:#f2f2f2;height:35px;width: 320px;margin-left: 65px;margin-top: -575px"><a href="#"><h3 style="color: black;margin-left: -170px;">Travel</h3></a></div>
+        <a href="#"> <img style="width:320px;border-top: 30px; height: 200px; margin-left: -110px;margin-top: -15px;border-radius: 2px"src="https://cdn.cnn.com/cnnnext/dam/assets/181004105551-sleeper-seats-in-the-new-comet-4-courtesy-douglas-millerkeystonegetty-images-small-tease.jpg"></a><br><br><br><br><br>
+</div>
+</div>
+    <div class="container3">
+        <div class="a19">
+            <p style="text-align: center;margin-top: -110px;margin-left: -1137px;font-size: 25px;font-weight:lighter">watch It </p><hr style="width: 990px;margin-top: -40px;margin-left: 145px;height: 3px;background-color:lightgray;border-top: lightgray"><br><br>
+            <hr style="width: 990px;margin-top: -43px;margin-left: 145px;height: 3px;background-color:lightgray;border-top: lightgray">
+        </div>
+        <div class="21" style="height: 300px">
+        <div class="a20" style="background-color:#f2f2f2;height:35px;width: 700px;margin-left: 65px;margin-top: 5px"><a href="#"><h3 style="color: black;margin-left: -170px;">Videos you should see</h3></a></div>
+            <a href="#"> <img style="width:220px;border-top: 30px; height: 130px; margin-left: -110px;margin-top: -15px;border-radius: 2px"src="https://cdn.cnn.com/cnnnext/dam/assets/180413104055-lewis-hamilton-shanghai-preview-medium-tease.jpg"></a>
+            <br><a style="margin-left:60px;margin-top:-5px;color: black;" href="#"><h3 style="font-weight: lighter;font-size: 22px" id="aa3">next president<br>of america</h3></a>
+            <a href="#"> <img style="width:220px; height: 130px; margin-left: -110px;margin-top: -85px;border-radius: 2px"src="https://cdn.cnn.com/cnnnext/dam/assets/180413104055-lewis-hamilton-shanghai-preview-medium-tease.jpg"></a>
+            <br><a style="margin-left:60px;margin-top:5px;color: black;" href="#"><h3 style="font-weight: lighter;font-size: 22px" id="aa3">next president<br>of america</h3></a>
+            <a href="#"> <img style="width:220px; height: 130px; margin-left: -110px;margin-top: -85px;border-radius: 2px"src="https://cdn.cnn.com/cnnnext/dam/assets/180413104055-lewis-hamilton-shanghai-preview-medium-tease.jpg"></a>
+        </div>
+        <div class="21" style="height: 300px;margin-left: 200px;margin-top: -350px">
+            <a href="#"> <img style="width:220px;border-top: 30px; height: 130px; margin-left: -70px;margin-top: -15px;border-radius: 2px"src="https://cdn.cnn.com/cnnnext/dam/assets/180413104055-lewis-hamilton-shanghai-preview-medium-tease.jpg"></a>
+            <br><br><br><br><br><a style="margin-left:105px;margin-top:25px;color: black;" href="#"><h3 style="font-weight: lighter;font-size: 22px" id="aa3">next president<br>of america</h3></a>
+            <a href="#"> <img style="width:220px; height: 130px; margin-left: -70px;margin-top: -80px;border-radius: 2px"src="https://cdn.cnn.com/cnnnext/dam/assets/180730185926-alex-trebek-medium-tease.jpg"></a>
+            <br><br><a style="margin-left:105px;margin-top:13px;color: black;" href="#"><h3 style="font-weight: lighter;font-size: 22px" id="aa3">next president<br>of america</h3></a>
+            <a href="#"> <img style="width:220px; height: 130px; margin-left: -70px;margin-top: -95px;border-radius: 2px"src="https://cdn.cnn.com/cnnnext/dam/assets/180912190921-01-lamborghini-urus-medium-tease.jpg"></a>
+        </div>
+
+        <div class="21" style="height: 300px;margin-left: 410px;margin-top: -400px">
+            <a href="#"> <img style="width:220px;border-top: 30px; height: 130px; margin-left: -40px;margin-top: -15px;border-radius: 2px"src="https://cdn.cnn.com/cnnnext/dam/assets/151028103110-olympia-washington-tiny-house-medium-tease.jpg"></a>
+            <br><br><br><br><br><a style="margin-left:140px;margin-top:25px;color: black;" href="#"><h3 style="font-weight: lighter;font-size: 22px" id="aa3">next president<br>of america</h3></a>
+            <a href="#"> <img style="width:220px; height: 130px; margin-left: -40px;margin-top: -80px;border-radius: 2px"src="https://cdn.cnn.com/cnnnext/dam/assets/181004002630-game-of-thrones-iron-throne-mad-king-medium-tease.jpg"></a>
+            <br><br><a style="margin-left:140px;margin-top:13px;color: black;" href="#"><h3 style="font-weight: lighter;font-size: 22px" id="aa3">next president<br>of america</h3></a>
+            <a href="#"> <img style="width:220px; height: 130px; margin-left: -40px;margin-top: -95px;border-radius: 2px"src="https://cdn.cnn.com/cnnnext/dam/assets/181005133444-01-meng-hongwei-file-restricted-medium-tease.jpg"></a>
+        </div>
+
+    <div>
+        <a href="#" > <img style="width:280px; height: 230px; margin-left: 600px;margin-top: -460px;border-radius: 2px"src="https://cdn.cnn.com/cnnnext/dam/assets/181005133444-01-meng-hongwei-file-restricted-medium-tease.jpg"></a>
+</div>
+    </div>
+<div style="margin-left: 700px">
+    <a href="#"> <img style="width:180px; height: 130px; margin-left: -70px;margin-top: -830px;border-radius: 2px"src="https://cdn.cnn.com/cnnnext/dam/assets/181005133444-01-meng-hongwei-file-restricted-medium-tease.jpg"></a>
+
+</div>
+<div class="footer">
+
+  <div>
+        <li style="font-size: 25px; margin:80px -20px"><a href="#"> World</a> </li>
+        <li style="margin:120px -47px;font-weight: lighter; "><a href="#"> U.S </a> </li>
+
+    <li style="margin:150px -55px; font-weight: lighter"><a href="#"> Africa</a></li>
+    <li style="margin:180px -55px; font-weight: lighter"><a href="#"> americas</a></li>
+    <li style="margin:210px -55px; font-weight: lighter"><a href="#"> asia</a></li>
+    <li style="margin:240px -55px; font-weight: lighter"><a href="#"> australia</a></li>
+    <li style="margin:270px -55px; font-weight: lighter"><a href="#"> china</a></li>
+    <li style="margin:300px -55px; font-weight: lighter"><a href="#"> Europe</a></li>
+    <li style="margin:330px -55px; font-weight: normal"><a href="#"> U.K</a></li>
+
+    <div style="margin-left: 190px">
+    <li style="font-size: 25px; margin:80px -20px"><a href="#"> U.S. Politics</a> </li>
+    <li style="margin:120px -110px;font-weight: lighter; "><a href="#"> 45 </a> </li>
+
+    <li style="margin:150px -110px; font-weight: lighter"><a href="#"> Congress</a></li>
+    <li style="margin:180px -110px; font-weight: lighter"><a href="#"> supreme court</a></li>
+    <li style="margin:210px -110px; font-weight: lighter"><a href="#"> 2018</a></li>
+    <li style="margin:240px -110px; font-weight: lighter"><a href="#"> key races</a></li>
+    <li style="margin:270px -110px; font-weight: lighter"><a href="#"> primary results</a></li>
+        <div style="margin-left: 220px">
+            <li style="font-size: 25px; margin:80px -20px"><a href="#"> Money</a> </li>
+            <li style="margin:120px -60px;font-weight: lighter; "><a href="#"> Business </a> </li>
+            <li style="margin:150px -60px;font-weight: lighter; "><a href="#"> Market </a> </li>
+            <li style="margin:180px -60px;font-weight: lighter; "><a href="#"> Tech </a> </li>
+            <li style="margin:210px -60px;font-weight: lighter; "><a href="#"> Luxury </a> </li>
+            <div style="margin-left: 180px">
+                <li style="font-size: 25px; margin:80px -20px"><a href="#"> Entertainment</a> </li>
+                <li style="margin:120px -130px;font-weight: lighter; "><a href="#"> Stars </a> </li>
+                <li style="margin:150px -130px;font-weight: lighter; "><a href="#"> Screen </a> </li>
+                <li style="margin:180px -130px;font-weight: lighter; "><a href="#"> Binge </a> </li>
+                <li style="margin:210px -130px;font-weight: lighter; "><a href="#"> Culture </a> </li>
+                <li style="margin:240px -130px;font-weight: lighter; "><a href="#"> Media </a> </li>
+              <div style="margin-left: 205px">
+                  <li style="font-size: 25px; margin:80px -20px"><a href="#"> tech</a> </li>
+                  <li style="margin:120px  -30px;font-weight: lighter; "><a href="#"> business </a> </li>
+                  <li style="margin:150px -30px;font-weight: lighter; "><a href="#"> culture </a> </li>
+                  <li style="margin:180px -30px;font-weight: lighter; "><a href="#"> gadgets </a> </li>
+                  <li style="margin:210px -30px;font-weight: lighter; "><a href="#"> Future </a> </li>
+                  <li style="margin:240px -30px;font-weight: lighter; "><a href="#"> Startups </a> </li>
+                  <div style="margin-left: 195px">
+                      <li style="font-size: 25px; margin:80px -20px"><a href="#"> Sport</a> </li>
+                      <li style="margin:120px  -43px;font-weight: lighter; "><a href="#"> Football </a> </li>
+                      <li style="margin:150px  -43px;font-weight: lighter; "><a href="#">tennis</a> </li>
+                      <li style="margin:180px  -43px;font-weight: lighter; "><a href="#"> Questrian </a> </li>
+                      <li style="margin:210px  -43px;font-weight: lighter; "><a href="#"> Golf </a> </li>
+                      <li style="margin:240px  -43px;font-weight: lighter; "><a href="#"> Judo </a> </li>
+                      <li style="margin:270px  -43px;font-weight: lighter; "><a href="#"> Horse racing </a> </li>
+                      <li style="margin:300px  -43px;font-weight: lighter; "><a href="#"> Motorsport </a> </li>
+                      <li style="margin:330px  -43px;font-weight: lighter; "><a href="#"> Sailing </a> </li>
+                      <li style="margin:360px  -43px;font-weight: lighter; "><a href="#"> rugby </a> </li>
+
+
+            </div>
+
+</div>
+</div>
+</div>
+    </div>
+
+</div>
+    <div style="float: left;">
+        <li  style="font-size:25px;margin :380px 0px 200px -1050px"><a href="#">Travel</a></li>
+        <li style="margin:420px 0px 200px -1045px;font-weight: lighter; "><a href="#"> destinantion </a> </li>
+        <li style="margin:450px 0px 200px -1045px;font-weight: lighter; "><a href="#"> Food & drink </a> </li>
+        <li style="margin:480px 0px 200px -1045px;font-weight: lighter; "><a href="#"> Play </a> </li>
+        <li style="margin:510px 0px 200px -1045px;font-weight: lighter; "><a href="#"> stay </a> </li>
+        <li style="margin:540px 0px 200px -1045px;font-weight: lighter; "><a href="#"> videos </a> </li>
+
+        <div style="float: left">
+            <li  style="font-size:25px;margin :380px 0px 200px -850px"><a href="#">Style</a></li>
+            <li style="margin:420px 0px 200px -850px;font-weight: lighter; "><a href="#"> arts </a> </li>
+            <li style="margin:450px 0px 200px -850px;font-weight: lighter; "><a href="#"> design </a> </li>
+            <li style="margin:480px 0px 200px -850px;font-weight: lighter; "><a href="#"> fashion </a> </li>
+            <li style="margin:510px 0px 200px -850px;font-weight: lighter; "><a href="#"> destinantion </a> </li>
+            <li style="margin:540px 0px 200px -850px;font-weight: lighter; "><a href="#"> destinantion </a> </li>
+            <li style="margin:570px 0px 200px -850px;font-weight: lighter; "><a href="#"> destinantion </a> </li>
+
+            <div style="float: left">
+                <li  style="font-size:25px;margin :380px 0px 200px -650px"><a href="#">Health</a></li>
+                <li style="margin:420px 0px 200px -650px;font-weight: lighter; "><a href="#"> Food </a> </li>
+                <li style="margin:450px 0px 200px -650px;font-weight: lighter; "><a href="#"> fitness </a> </li>
+                <li style="margin:480px 0px 200px -650px;font-weight: lighter; "><a href="#"> wellness </a> </li>
+                <li style="margin:510px 0px 200px -650px;font-weight: lighter; "><a href="#"> parenting </a> </li>
+                <li style="margin:540px 0px 200px -650px;font-weight: lighter; "><a href="#"> vital signs </a> </li>
+
+
+                <div style="float: left">
+                    <li  style="font-size:25px;margin :380px 0px 200px -450px"><a href="#">Features</a></li>
+                    <li style="margin:420px 0px 200px -450px;font-weight: lighter; "><a href="#"> Freedom project </a> </li>
+                    <li style="margin:450px 0px 200px -450px;font-weight: lighter; "><a href="#"> impact your world </a> </li>
+                    <li style="margin:480px 0px 200px -450px;font-weight: lighter; "><a href="#"> indside afica </a> </li>
+                    <li style="margin:510px 0px 200px -450px;font-weight: lighter; "><a href="#"> 2 degrees</a> </li>
+                    <li style="margin:540px 0px 200px -450px;font-weight: lighter; "><a href="#"> CNN heroes </a> </li>
+                    <li style="margin:570px 0px 200px -450px;font-weight: lighter; "><a href="#"> All features </a> </li>
+
+
+                    <div style="float: left">
+                        <li  style="font-size:25px;margin :380px 0px 200px -250px"><a href="#">Videos</a></li>
+                        <li style="margin:420px 0px 200px -250px;font-weight: lighter; "><a href="#"> Video News</a> </li>
+                        <li style="margin:450px 0px 200px -250px;font-weight: lighter; "><a href="#"> Feature Shows </a> </li>
+                        <li style="margin:480px 0px 200px -250px;font-weight: lighter; "><a href="#"> HLN </a> </li>
+                        <li style="margin:510px 0px 200px -250px;font-weight: lighter; "><a href="#"> TV shows </a> </li>
+                        <li style="margin:540px 0px 200px -250px;font-weight: lighter; "><a href="#"> TV schedule</a> </li>
+                        <li style="margin:570px 0px 200px -250px;font-weight: lighter; "><a href="#"> Faces of CNN worldwide</a> </li>
+
+                        <li style="margin:600px 0px 200px -250px;font-weight: lighter; "><a href="#">CNNVR</a> </li>
+
+                        <div style="float: left">
+                            <li  style="font-size:25px;margin :380px 0px 200px -60px"><a href="#">More...</a></li>
+                            <li style="margin:420px 0px 200px -80px;font-weight: lighter; "><a href="#"> Weather</a> </li>
+                            <li style="margin:450px 0px 200px -80px;font-weight: lighter; "><a href="#"> CNN profiles </a> </li>
+                            <li style="margin:480px 0px 200px -95px;font-weight: lighter; "><a href="#"> LeaderShip </a> </li>
+                            <li style="margin:510px 0px 200px -93px;font-weight: lighter; "><a href="#"> Pressroom </a> </li>
+                            <li style="margin:540px 0px 200px -93px;font-weight: lighter; "><a href="#"> Pratner sites</a> </li>
+                            <li style="margin:570px 0px 200px -93px;font-weight: lighter; "><a href="#"> Work for CNN</a> </li>
+
+
+
+                        </div>
+    </div>
+</div>
+</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
